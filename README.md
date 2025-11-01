@@ -50,7 +50,7 @@ Rewriter API: Simplifies technical AI outputs into clear, user-friendly language
 Local Caching: Stores data locally for offline access and faster response times.
 
 The front end is built using HTML, CSS, and JavaScript, designed for speed, modularity, and minimal resource use.
-
+## Testing Instructions for Judges
 Getting Started
 
 Download or clone the repository.
