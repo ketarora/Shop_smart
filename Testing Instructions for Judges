@@ -1,0 +1,52 @@
+## Testing Instructions for Judges
+
+### 1. Prerequisites: Chrome Canary & AI Flags
+
+**This extension requires Google Chrome Canary and specific experimental flags to be enabled.**
+
+-   First, download and install [Google Chrome Canary](https://www.google.com/chrome/canary/).
+-   Next, navigate to the flags page by typing this in the address bar:
+    ```
+    chrome://flags
+    ```
+-   Enable the following two flags:
+    -   `#optimization-guide-on-device-model`
+    -   `#prompt-api-for-gemini-nano`
+-   After enabling the flags, **relaunch** your browser.
+
+_Note: The first time you launch, Chrome will download the Gemini Nano model in the background. This may take a few minutes._
+
+### 2. Loading the Extension
+
+1.  **Download the Code:**
+    -   Visit the GitHub repository: [ketarora/Shop_smart](https://github.com/ketarora/Shop_smart)
+    -   Click the green **Code** button and select **Download ZIP**.
+    -   Unzip the downloaded file on your computer.
+
+2.  **Install the Extension:**
+    -   Open Chrome Canary and navigate to `chrome://extensions`.
+    -   Enable **Developer mode** using the toggle in the top-right corner.
+    -   Click the **Load unpacked** button.
+    -   Select the unzipped `Shop_smart-main` folder.
+    -   The **ShopSmart AI** extension will now appear in your list and in the toolbar.
+
+### 3. How to Test
+
+1.  Navigate to a product page on a supported e-commerce site, such as:
+    -   [Amazon.in](https://www.amazon.in)
+    -   [Amazon.com](https://www.amazon.com)
+    -   [Flipkart.com](https://www.flipkart.com)
+
+2.  Once the page loads, the **ShopSmart AI badge** will appear in the bottom-right corner, showing the initial analysis (default is EcoScore).
+
+3.  Click the **ShopSmart AI icon** in your Chrome toolbar to open the popup.
+
+4.  Inside the popup, use the toggle buttons to switch between **🌿 EcoScore** and **🛡️ Trust Score** modes. The on-page badge and the popup details will update accordingly.
+
+5.  Click the **View Full Analysis** button to open the side panel and see a detailed breakdown of the selected score.
+
+The relationship between the analysis modes \\(M_{eco}, M_{trust}\\) and the final score \\(S\\) can be thought of as:
+$$
+S = f(\text{ProductData}, M_{\text{selected}})
+$$
+where \\(f\\) is the AI analysis function.
