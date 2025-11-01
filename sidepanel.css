@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.panel {
+  padding: 24px;
+  max-width: 600px;
+}
+
+.panel-header {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.panel-header h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* SCORE SUMMARY */
+.score-summary {
+  text-align: center;
+  background: white;
+  padding: 32px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.big-score {
+  font-size: 72px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 8px;
+}
+
+.score-label {
+  font-size: 18px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#summary-text {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* SECTIONS */
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* DETAILED METRICS */
+#detailed-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.metric-detail {
+  padding: 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #22c55e;
+}
+
+.metric-detail.warning {
+  border-left-color: #f59e0b;
+}
+
+.metric-detail.danger {
+  border-left-color: #ef4444;
+}
+
+.metric-detail h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111827;
+  font-weight: 600;
+}
+
+.metric-detail p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.metric-detail ul {
+  margin: 8px 0 0 16px;
+  padding: 0;
+}
+
+.metric-detail li {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+/* RECOMMENDATIONS */
+#recommendations {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+#recommendations ul {
+  margin: 12px 0 0 20px;
+}
+
+#recommendations li {
+  margin: 8px 0;
+}
+
+/* IMPACT STATS */
+.impact-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background: #f0fdf4;
+  border-radius: 10px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}

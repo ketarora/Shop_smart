@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopSmart AI - Details</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="panel">
+    <div class="panel-header">
+      <h2>🛒 ShopSmart AI</h2>
+      <p class="subtitle">Detailed Analysis</p>
+    </div>
+    
+    <div id="details-content">
+      <!-- Score Summary -->
+      <div class="score-summary">
+        <div class="big-score" id="big-score">85</div>
+        <div class="score-label" id="score-label">EcoScore</div>
+        <p id="summary-text">Loading detailed analysis...</p>
+      </div>
+
+      <!-- Detailed Metrics -->
+      <div class="section">
+        <h3>📊 Detailed Breakdown</h3>
+        <div id="detailed-metrics">
+          <p class="placeholder">Analyzing product...</p>
+        </div>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="section">
+        <h3>💡 Recommendations</h3>
+        <div id="recommendations">
+          <p class="placeholder">Generating recommendations...</p>
+        </div>
+      </div>
+
+      <!-- User Impact (for Eco mode) -->
+      <div class="section" id="impact-section">
+        <h3>📈 Your Impact</h3>
+        <div class="impact-stats">
+          <div class="stat">
+            <div class="stat-value">45kg</div>
+            <div class="stat-label">CO₂ Saved This Month</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">2.3kg</div>
+            <div class="stat-label">Plastic Avoided</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

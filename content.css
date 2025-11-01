@@ -1,0 +1,14 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shopsmart-floating-badge {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

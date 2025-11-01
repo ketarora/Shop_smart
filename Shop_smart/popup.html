@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSmart AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🛒 ShopSmart AI</h1>
+      <p class="tagline">Sustainability + Trust Analysis</p>
+    </div>
+
+    <!-- MODE TOGGLE -->
+    <div class="mode-toggle">
+      <button id="eco-btn" class="toggle-btn active">🌿 EcoScore</button>
+      <button id="trust-btn" class="toggle-btn">🛡️ Trust Score</button>
+    </div>
+
+    <div id="content">
+      <!-- LOADING STATE -->
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Analyzing product...</p>
+      </div>
+
+      <!-- NO PRODUCT STATE -->
+      <div id="no-product" class="message">
+        <p>📦 Browse a product page to see analysis</p>
+        <p class="hint">Works on Amazon & Flipkart</p>
+      </div>
+
+      <!-- ECO SCORE VIEW -->
+      <div id="eco-analysis" class="hidden">
+        <div class="score-card">
+          <div class="score-circle">
+            <span id="eco-score-value">85</span>
+            <span class="score-label">/100</span>
+          </div>
+          <h3 id="eco-product-title">Product Name</h3>
+          <p id="eco-category" class="category-badge">Good</p>
+        </div>
+
+        <div class="breakdown">
+          <h4>Sustainability Breakdown</h4>
+          <div class="metric">
+            <span>Materials</span>
+            <span id="materials-info" class="info-text">Analyzing...</span>
+          </div>
+          <div class="metric">
+            <span>Certifications</span>
+            <span id="cert-info" class="info-text">Checking...</span>
+          </div>
+          <div class="metric">
+            <span>Packaging</span>
+            <span id="packaging-info" class="info-text">Evaluating...</span>
+          </div>
+        </div>
+
+        <div id="eco-concerns" class="alert hidden">
+          <strong>⚠️ Concerns:</strong>
+          <p id="concerns-text"></p>
+        </div>
+
+        <button id="view-eco-details" class="btn-primary">View Full Analysis</button>
+      </div>
+
+      <!-- TRUST SCORE VIEW -->
+      <div id="trust-analysis" class="hidden">
+        <div class="score-card">
+          <div class="score-circle">
+            <span id="trust-score-value">75</span>
+            <span class="score-label">/100</span>
+          </div>
+          <h3 id="trust-product-title">Product Name</h3>
+          <p id="trust-category" class="category-badge">Trusted</p>
+        </div>
+
+        <div class="breakdown">
+          <h4>Review Analysis</h4>
+          <div class="metric">
+            <span>Fake Reviews</span>
+            <span id="fake-percentage" class="info-text warning">~30%</span>
+          </div>
+          <div class="metric">
+            <span>Verdict</span>
+            <span id="verdict" class="info-text">Analyzing...</span>
+          </div>
+          <div class="metric">
+            <span>Recommendation</span>
+            <span id="recommendation" class="badge-rec">⚠️ CAUTIOUS</span>
+          </div>
+        </div>
+
+        <div id="red-flags" class="alert hidden">
+          <strong>🚨 Red Flags:</strong>
+          <ul id="red-flags-list"></ul>
+        </div>
+
+        <button id="view-trust-details" class="btn-primary">View Full Analysis</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
